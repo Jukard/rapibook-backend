@@ -1,4 +1,4 @@
-# Pastelería RESTful API
+# Tienda online Rapibook rest API
 
 >  Interfaz de aplicación (API RESTful ) diseñada con la tecnologia de Node JS, con respuesta en JavaScript Object Notation (JSON). Provee diferentes servicios como autorizaciones, usa algoritmos hash para garantizar la seguridad de contraseñas y HTTPS para asegurar una transmisión de datos segura. controla la base de datos (PostgreSQL) y el almacenamiento de archivos.
 
@@ -30,7 +30,6 @@ Sequelize es un ORM para Oracle, Postgres, MySQL, MariaDB, SQLite y SQL Server, 
     │   ├── uploads             # Archivos estáticos
     ├── src             
     │   ├── configs             # Configuración
-    │   ├── controllers         # Controladores
     │   ├── middlewares         # Middlewares
     │   ├── models              # Modelos
     │   ├── routes              # Rutas
@@ -42,7 +41,7 @@ Sequelize es un ORM para Oracle, Postgres, MySQL, MariaDB, SQLite y SQL Server, 
 ### Clonar el proyecto
 
 ```shell
-git clone https://github.com/celluloiddream/pasteleria-api.git
+git clone https://github.com/Jukard/rapibook-backend.git
 ```
 ### Instalar dependencias
 
@@ -67,20 +66,15 @@ Al ejecutar el llamado de instalación se incluye nodemon, se recomienda añadir
 | Iniciar sesión               | /login                                     |
 | Listar/crear/ empleado       | /employees                                 |
 | Editar/borrar empleado       | /employees/:id                             |
-| Listar/crear/ cliente        | /customers                                 |
-| Editar/borrar cliente        | /customers/:id                             |
-| Listar/crear/ productos      | /products                                  |
-| Editar/borrar cliente        | /products/:id                              |
+| Listar/crear/ usuario        | /customers                                 |
+| Editar/borrar usuario        | /customers/:id                             |
+| Listar/crear/ libro          | /libro                                     |
+| Editar/borrar usuario        | /libro/:id                                 |
 | Listar/crear/ categorias     | /categories                                |
 | Editar/borrar categorias     | /categories/:id                            |
-| Listar/crear/ pedidos        | /orders                                    |
-| Editar pedido                | /orders/:id                                |
-| Listar/crear/ diseños        | /designs                                   |
-| Editar diseño                | /designs/:id                               |
-| Listar/crear/ sede           | /outlets                                   |
-| Editar/borrar   sede         | /outlets/:id                               |
-| Listar/crear/ metodo de pago | /payment-methods                           |
-| Editar/borrar metodo de pago | /payment-methods/:id                       |
+| Listar/crear/ factura        | /factura                                   |
+| Editar pedido                | /factura/:id                               |
+| Editar cart                  | /cart/                                     |
 
 ## Pruebas
 
